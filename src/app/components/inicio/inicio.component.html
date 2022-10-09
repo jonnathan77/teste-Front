@@ -1,0 +1,50 @@
+<div class="container">
+  
+  <div class="row">
+    <div class="col-10">
+       <p>Lista de Veiculos</p>
+     </div>
+     
+     <div class="col-2">
+       <button style=" display: flex; justify-content: end;" routerLink="/add" type="button" class="btn btn-dark">Adicionar </button>
+     </div>
+  </div>
+
+    <div class="card" style="background: rgb(247, 246, 246)">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Placa</th>
+            <th scope="col">Chassi</th>
+            <th scope="col">Renavam</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Ano</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Deletar</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let veiculo of veiculos">
+            <th>{{ veiculo.id }}</th>
+            <td>{{ veiculo.placa }}</td>
+            <td>{{ veiculo.chassi }}</td>
+            <td>{{ veiculo.renavam }}</td>
+            <td>{{ veiculo.modelo }}</td>
+            <td>{{ veiculo.marca }}</td>
+            <td>{{ veiculo.ano }}</td>
+            <td>
+                <button (click)="alterar(veiculo.id)" type="button" class="btn btn-primary">Editar</button>
+            </td>
+            <td>
+                <button (click)="deletar(veiculo.id)" type="button" class="btn btn-danger">Deletar</button>
+            </td>
+    
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+</div>
