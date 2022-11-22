@@ -1,6 +1,6 @@
 <!-- Esse trabalho foi feito por Jonnathan Cruz, Desenvolvedor Mobile e FullStack -->
 
-Teste para a Info sistemas (Parte somente do front-end)
+Teste para parte somente do front-end
 
 Assim que puxar o repositorio, favor dar 'npm install' para instalar as dependencias necessarias.
 
